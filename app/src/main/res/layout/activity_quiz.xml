@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_quiz"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:weightSum="1"
+    tools:context="com.ekyadhiputra.loginaplikasi.Quiz">
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Question"
+        android:textSize="20sp"
+        android:layout_weight="1"
+        android:padding="4dp"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/choise1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorOrange"
+            android:layout_marginBottom="10dp"
+            android:onClick="onClick"/>
+        <RadioButton
+            android:id="@+id/choise2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="B"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorOrange"
+            android:layout_marginBottom="10dp"
+            android:onClick="onClick"/>
+        <RadioButton
+            android:id="@+id/choise3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="C"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorOrange"
+            android:layout_marginBottom="10dp"
+            android:onClick="onClick"/>
+        <RadioButton
+            android:id="@+id/choise4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="D"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorOrange"
+            android:layout_marginBottom="10dp"
+            android:onClick="onClick"/>
+    </RadioGroup>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/score_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Score"
+            android:textSize="24sp"
+            android:textColor="@color/colorBlack"
+            android:background="@color/colorGrey"
+            android:gravity="center_vertical" />
+
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="0/0"
+            android:textSize="24sp"
+            android:textColor="@color/colorBlack"
+            android:background="@color/colorGrey"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="200dp"
+            android:layout_marginStart="240dp"/>
+    </RelativeLayout>
+</LinearLayout>
